@@ -20,7 +20,7 @@ The datasets drawn from this particular location (Alpental Base 3100') include d
 
  It is important to note that precipitation data is standardized to water equivalent.  That is to say, regardless of whether it falls to the ground as rain or snow, the gauges are heated and record quantities using water equivalent.  Similarly, the data recorded for 24 Hour Snow are expressed using a term called SWE (Snow Water Equivalent).  This is how much water content is in a cubic inch of space.  
 
-In general, we can think of 0.1 inches of SWE producing roughly 1 inch to 1.5 inches of actual snow on the ground.  Similarly, a storm cycle that delivers 1.0 inch of SWE may result in a foot of fresh snowfall on the ground.  These are only general rules of thumb for estimating.  The type of snow particles, moisture content, and density will all play a role in what total accululation amounts to.
+In general, we can think of 0.1 inches of SWE producing roughly 1 inch to 1.5 inches of actual snow on the ground.  Similarly, a storm cycle that delivers 1.0 inch of SWE may result in a foot of fresh snowfall on the ground.  These are only general rules of thumb for estimating.  The type of snow particles, moisture content, and density will all play a role in what total accumulation amounts to.
 
 The Total Snow Depth field in our data refers to actual inches of snow on the surface of the ground.
 
@@ -44,8 +44,12 @@ While this provides insights as to how often the temperatue was conducive to pro
 
 ![Mean Temps](img/precip_totals.jpg)
 
+As we can see in the chart above, for our limited time frame of 5 years, there were a couple of instances when total rain for the month of December did appear to exceed that of snow for the same time period.
+
 To explore the potential accuracy/inaccuracy of the claim *"It rains as much as it snows at Alpental in December"*, I used Bayesian analysis to apply the five years of data we have to see what the probability is of that hypothesis holding true as time goes on.
 
+
+ADD Bayes work here!!!
 
 
 
@@ -57,3 +61,4 @@ The graphs below illustrate some important points in this query.  Based on feedb
 
 
 ![Snow Depth](img/snowdepths.jpg)
+
