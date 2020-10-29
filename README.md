@@ -42,12 +42,18 @@ After importing and cleaning my data using pandas, my first goal was to investig
 
 While this provides insights as to how often the temperatue was conducive to producing snow, it does not address the factor of whether or not meausurable precipitation was happening when the temperature was favorable for snowfall.  This could be further assessed by determining which hourly periods had measurable precipitation for temperatures above and below the transition point, as well as the actual quantities of precipitation measured during those periods. 
 
+![Mean Temps](img/precip_totals.jpg)
+
 To explore the potential accuracy/inaccuracy of the claim *"It rains as much as it snows at Alpental in December"*, I used Bayesian analysis to apply the five years of data we have to see what the probability is of that hypothesis holding true as time goes on.
 
 
 
 
 
+
+While we now have a better idea of rainy periods versus snowy periods, our second inquiry pertains more to the question of *"is there enough snow 'coverage' to provide a reasonable base and allow the ski area to open to the public for the busy holiday season?"*
+
+The graphs below illustrate some important points in this query.  Based on feedback from a former professional ski patrol staff member, it is reasonable to consider a minumum depth of 36" of snow being one factor that influences the decision of when to open.  The critical date for the busy holiday season may be defined by the start date of school breaks, which varies annually but is typically the Friday which falls before Christmas.  As we can see, snow depth in some of our years of interest was robust enough in the first half of the month to allow early opening.  In 2018 the actual opening date coincided with the target deadline.  In 2019, conditions were so weak that the area was not able to open until January 5, completely missing the holiday break period.
 
 
 ![Snow Depth](img/snowdepths.jpg)
