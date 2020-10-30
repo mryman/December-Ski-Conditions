@@ -40,20 +40,24 @@ After importing and cleaning my data using pandas, my first goal was to investig
 
 ![Mean Temps](img/meantemps.jpg)
 
+## Snow or Rain?
+
 While this provides insights as to how often the temperatue was conducive to producing snow, it does not address the factor of whether or not meausurable precipitation was happening when the temperature was favorable for snowfall.  This could be further assessed by determining which hourly periods had measurable precipitation for temperatures above and below the transition point, as well as the actual quantities of precipitation measured during those periods. 
 
 ![Mean Temps](img/precip_totals.jpg)
 
-As we can see in the chart above, for our limited time frame of 5 years, there were a couple of instances when total rain for the month of December did appear to exceed that of snow for the same time period.
+As we can see in the chart above, for 2016 and 2018 the total rain for the month of December did appear to exceed that of snow for the same time period.
 
-To explore the potential accuracy/inaccuracy of the claim *"It rains as much as it snows at Alpental in December"*, I used Bayesian analysis to apply the five years of data we have to see what the probability is of that hypothesis holding true as time goes on.
-
-
-ADD Bayes work here!!!
+Assuming normal distributions over longer periods of time,  an aggregated mean for each type of precipitation can be plotted and illustrates that the average amount of snow recorded for the hourly periods slightly exceeds that of rain.  Again, this lends creedence to the generalized statement, *"some years it feels like it rains as much as it snows in December."*
 
 
+![Mean Temps](img/daily_precip_means.jpg)
 
 
+
+
+
+## Is There Enough Snow For Skiing?
 
 While we now have a better idea of rainy periods versus snowy periods, our second inquiry pertains more to the question of *"is there enough snow 'coverage' to provide a reasonable base and allow the ski area to open to the public for the busy holiday season?"*
 
@@ -62,3 +66,12 @@ The graphs below illustrate some important points in this query.  Based on feedb
 
 ![Snow Depth](img/snowdepths.jpg)
 
+
+
+## Going Forward
+
+As the temperatures begin to drop and weather becomes less stable in the last quarter of the year, many snow sport enthusiasts begin pondering how the snowpack is taking shape.  A live feed of data from the weather instruments used for this study is available here, along with all of the other weather stations in the network used by the Northwest Avalanche Center:   
+
+<https://nwac.us/weatherdata//>
+
+In additon to seeing the live data generated in the most recent 24-hour or 7 day-period, data can be downloaded over a variety of time intervals for specific fields or full sets from any of the stations.  It is my hope to build out this set of tools to be more versatile for anlayzing more weather factors from more stations and incorporate full set csv files as they become available.
