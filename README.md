@@ -33,6 +33,7 @@ As the data fields from each location may differ slightly or include more fields
 ### Example of weather instrument stations:
 ![Weather Station](img/weather_instruments.jpg)
 
+#### Image source: Northwest Avalanche Center
 
 ## Exploratory Data Analysis
 
@@ -46,7 +47,7 @@ While this provides insights as to how often the temperatue was conducive to pro
 
 ![Mean Temps](img/precip_totals.jpg)
 
-As we can see in the chart above, for 2016 and 2018 the total rain for the month of December did appear to exceed that of snow for the same time period.
+As we can see in the chart above, for 2017 and 2019 the total rain for the month of December did appear to exceed that of snow for the same time period.
 
 Assuming normal distributions over longer periods of time,  an aggregated mean for each type of precipitation can be plotted and illustrates that the average amount of snow recorded for the hourly periods slightly exceeds that of rain.  Again, this lends creedence to the generalized statement, *"some years it feels like it rains as much as it snows in December."*
 
