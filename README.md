@@ -56,6 +56,28 @@ Assuming normal distributions over longer periods of time,  an aggregated mean f
 
 
 
+For a hypothesis test to address our generalized statement about rain quantity, we can state:   
+
+H0 = It rains as much as it snows at this location in December. Avgerage Ratio >= 1.   
+
+H1 = It snows more than rains at this location in December.  Average Ratio < 1.
+
+Using the ratio of rain to snow accumulation for each year gives us a small sample of 5 elements to work with for a one sample, one tailed t-test.  Using the scipy stats ttest_1samp method, we calculate a t value of t: 0.275157826015393 and a p-value of: 0.7968233329625489.  With a standard alpha value of .05, we can conclude that we must fail to reject the null hypothesis.
+
+## Future Rain Probability
+
+How does this affect our beliefs about what the weather may hold for the coming season and future Decembers?  Since we have embraced the assumption of our data following a normal distribution and calculated values that fail to reject our null hypothesis, plugging in the mean and standard deviation from our rather small sample size:
+
+Probability = 1 - stats.norm(mu, std).cdf(1)  = 0.54896
+
+
+ This 54% is also shown by the shaded area under the curve in the figure below.
+
+
+![Rain Probability](img/future_rain_prob.jpg)
+
+
+
 
 
 ## Is There Enough Snow For Skiing?
